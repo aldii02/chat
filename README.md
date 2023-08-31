@@ -13,3 +13,14 @@
   "password": "123"
 }
 ```
+
+
+## Регистрация пользователей
+- localhost:58082/chat/register
+```json
+{
+  "login": "aidos",
+  "password": "123"
+}
+```
+
