@@ -8,7 +8,7 @@
 - localhost:58087/chat/users/create
 ```json
 {
-  "name": "Aidos",
+  "name": "Aldi",
   "login": "aldi",
   "password": "123"
 }
@@ -19,8 +19,37 @@
 - localhost:58082/chat/register
 ```json
 {
-  "login": "aidos",
+  "login": "aldi",
   "password": "123"
+}
+```
+
+## Создание ChatRoom (Group)
+- localhost:58082/chat/chatRooms
+```json
+{
+  "name": "teammates",
+  "userIdList": [1, 2, 3]
+}
+```
+
+## Отправка сообщения участнику группы (лс)
+- localhost:58082/chat/messages/send
+```json
+{
+  "fromUserId": 2,
+  "toUserId": 3,
+  "text": "Salam Arman2"
+}
+```
+
+## Отправка сообщение в группу
+- localhost:58082/chat/messages/send
+```json
+{
+  "fromUserId": 1,
+  "toChatId": 2,
+  "text": "Salam pacanam ot Aldi"
 }
 ```
 
